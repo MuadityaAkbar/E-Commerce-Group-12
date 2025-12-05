@@ -1,92 +1,95 @@
-/* =========================
-   HISTORY.CSS
-   Card layout: Gambar di atas, keterangan di bawah
-   Ukuran card compact
-   Tanpa tanggal
-   ========================= */
 
-/* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Montserrat, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Instrument Sans', sans-serif; 
 }
 
 body {
-    background: linear-gradient(
-        to right,
-        #000000 10%,
-        #001a1a 35%,
-        #005b63 60%,
-        #00FFE1 100%
-    );
-    padding: 30px;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+overflow-x: hidden; 
+background: linear-gradient(to right,#000000 10%,#001a1a 35%,#005b63 60%, #00FFE1 100%
+); 
 }
+
+.main-content {
+flex-grow: 1; 
+padding: 40px 20px;
+width: 100%;
+}
+
 
 /* TITLE */
 .page-title {
-    color: white;
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-align: center;
+color: white;
+font-size: 26px;
+font-weight: 700;
+margin-bottom: 30px;
+text-align: center;
 }
 
 /* HISTORY LIST WRAPPER */
 .history-container {
-    display: flex;
-    flex-wrap: wrap;       
-    gap: 20px;
-    justify-content: center;
+display: flex;
+flex-wrap: wrap; 
+gap: 25px;
+justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* CARD */
 .history-card {
-    display: flex;
-    flex-direction: column;  
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 12px;
-    align-items: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-    width: 200px;            
-    transition: transform 0.2s;
+display: flex;
+flex-direction: column; 
+background: #ffffff;
+border-radius: 10px;
+padding: 15px;
+align-items: center;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+width: 220px;
+transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .history-card:hover {
-    transform: translateY(-5px);
+transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 /* IMAGE */
 .history-card img {
-    width: 100%;
-    height: 150px;
-    border-radius: 6px;
-    object-fit: cover;
-    margin-bottom: 10px;
+width: 100%;
+height: 160px;
+border-radius: 8px;
+object-fit: cover;
+margin-bottom: 12px;
 }
 
 /* TEXT INFO */
-.history-info h3 {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 6px;
-    color: #000;
+.history-info {
+    width: 100%;
     text-align: center;
+}
+
+.history-info h3 {
+font-size: 17px;
+font-weight: 700;
+margin-bottom: 8px;
+color: #000;
 }
 
 .history-info p {
-    font-size: 13px;
-    color: #222;
-    margin-bottom: 4px;
-    text-align: center;
+font-size: 14px;
+color: #333;
+margin-bottom: 4px;
 }
 
 .history-info .success-msg {
-    font-size: 13px;
-    color: #00CDBA;
-    font-weight: 600;
-    margin-top: 6px;  /* sedikit jarak dari quantity */
-    text-align: center;
+font-size: 14px;
+color: #00CDBA;
+font-weight: 700;
+margin-top: 10px; 
 }
