@@ -1,0 +1,190 @@
+/* =========================
+   STYLES LOGIN TERPADU
+   Gradient, form, tombol, pesan
+   ========================= */
+
+/* RESET & BODY */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #000000 0%, #0A0F0F 50%, #00FFE1 100%);
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+/* CONTAINER */
+.login-container, .container {
+    width: 430px;
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+/* TITLE / HEADER */
+.title, h2 {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 34px;
+    margin-bottom: 45px;
+}
+
+h2 .sign {
+    color: #00FFE1;
+}
+
+h2 .up {
+    color: #FFFFFF;
+}
+
+/* LABELS */
+label {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    margin-bottom: 22px;
+    border-radius: 6px;
+    border: none;
+    background: #DDDDDD;
+    font-size: 15px;
+    outline: none;
+}
+
+/* CHECKBOX AREA */
+.checkbox-area {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+.checkbox-area input {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox-area span {
+    font-size: 14px;
+    color: white;
+}
+
+/* OPTIONS FLEX */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.remember-text {
+    color: white;
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.forgot {
+    color: oklab(85.593% -0.13133 -0.06511);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* BUTTONS */
+.btn-signin, .btn-login {
+    width: 100%;
+    padding: 14px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #00FFE1;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-login {
+    width: 107%;  /* sejajar dengan input */
+    margin-top: 5px;
+}
+
+.btn-google {
+    width: 100%;
+    background: #dcdcdc;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn-google img {
+    width: 25px;
+}
+
+/* SIGNUP TEXT */
+.signup-text {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.signup-text a {
+    color: oklab(85.593% -0.13133 -0.06511);
+    text-decoration: none;
+}
+
+/* MESSAGE */
+.msg {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.error { 
+    color: #ff5555; 
+}
+
+.success { 
+    color: #00ffae; 
+}
+
+/* KLASA WARNA KHUSUS */
+.cyan {
+    color: #00FFE1;
+}
+
+.white {
+    color: #FFFFFF;
+}

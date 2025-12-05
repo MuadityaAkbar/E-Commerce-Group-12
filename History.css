@@ -1,0 +1,92 @@
+/* =========================
+   HISTORY.CSS
+   Card layout: Gambar di atas, keterangan di bawah
+   Ukuran card compact
+   Tanpa tanggal
+   ========================= */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    background: linear-gradient(
+        to right,
+        #000000 10%,
+        #001a1a 35%,
+        #005b63 60%,
+        #00FFE1 100%
+    );
+    padding: 30px;
+}
+
+/* TITLE */
+.page-title {
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* HISTORY LIST WRAPPER */
+.history-container {
+    display: flex;
+    flex-wrap: wrap;       
+    gap: 20px;
+    justify-content: center;
+}
+
+/* CARD */
+.history-card {
+    display: flex;
+    flex-direction: column;  
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 12px;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+    width: 200px;            
+    transition: transform 0.2s;
+}
+
+.history-card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+.history-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* TEXT INFO */
+.history-info h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #000;
+    text-align: center;
+}
+
+.history-info p {
+    font-size: 13px;
+    color: #222;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.history-info .success-msg {
+    font-size: 13px;
+    color: #00CDBA;
+    font-weight: 600;
+    margin-top: 6px;  /* sedikit jarak dari quantity */
+    text-align: center;
+}

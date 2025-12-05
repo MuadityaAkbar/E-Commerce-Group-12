@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #00FFE1, #000000);
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-box {
+    width: 260px;            /* disamakan dengan gambar kamu */
+    height: 260px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 40px;     /* beri jarak supaya sejajar dengan teks */
+}
+
+.logo-box img {
+    width: 190px;            /* ukuran persis seperti hasil screenshotmu */
+    height: auto;
+}
+
+.title {
+    font-size: 90px;          /* disamakan dengan contoh */
+    font-weight: 700;
+}
+
+.gm {
+    color: #00FFE1;
+}
+
+.mart {
+    color: white;
+}
