@@ -1,0 +1,86 @@
+/*
+ * Bagian CSS Khusus untuk ADMIN MANAGE USERS (admin_manage_users.php)
+ * (Asumsi: .data-table dan .status-badge dasar sudah didefinisikan secara global)
+ */
+
+/* --- Tampilan Tabel dan Responsif --- */
+
+.table-responsive {
+    overflow-x: auto; /* Memungkinkan scrolling horizontal di layar kecil */
+    margin-top: 20px;
+}
+
+.user-management-table th, .user-management-table td {
+    /* Memastikan konten di kolom tidak terpotong (penting untuk kolom aksi) */
+    white-space: nowrap; 
+}
+
+/* --- Badge Status Role dan Toko --- */
+
+/* Badge Dasar (Jika belum didefinisikan) */
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.8em;
+}
+
+/* Warna Spesifik untuk Role */
+.status-badge.customer { 
+    background: #17a2b8; /* Biru Info */
+    color: #fff; 
+} 
+.status-badge.seller { 
+    background: #28a745; /* Hijau Sukses */
+    color: #fff; 
+} 
+.status-badge.admin { 
+    background: #dc3545; /* Merah Bahaya */
+    color: #fff; 
+} 
+
+/* Warna Status Toko (Jika ditampilkan di kolom status toko) */
+.status-badge.verified { background: #28a745; }
+.status-badge.pending { background: #ffc107; color: #1e1e1e; }
+.status-badge.rejected { background: #dc3545; }
+
+
+/* --- Role Selection dan Tombol Aksi --- */
+
+/* Dropdown untuk memilih role baru */
+.role-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background: #0d0d0d;
+    color: #f0f0f0;
+    margin-right: 10px;
+    /* Menyembunyikan panah default di beberapa browser */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Tombol Update Role */
+.btn-action {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #00bcd4; /* Cyan */
+    color: #1e1e1e;
+    transition: background-color 0.3s;
+}
+
+.btn-action:hover {
+    background-color: #008fa3;
+}
+
+/* Gaya untuk tombol yang dinonaktifkan (misalnya, untuk admin lain atau diri sendiri) */
+.btn-action.disabled {
+    background-color: #333;
+    color: #999;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
