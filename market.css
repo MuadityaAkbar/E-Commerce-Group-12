@@ -1,103 +1,64 @@
-/* FILE: market.css */
+/* GLOBAL BACKGROUND */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00FFE1 0%, #000 60%);
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
 
-/* Gaya Khusus Market */
+/* GRID PRODUK */
 .product-grid { 
     display: grid; 
-    /* Mengatur kolom responsif */
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
     gap: 30px; 
     padding: 20px 0; 
 }
 
-/* BARU: Gaya untuk Filter Kategori */
+/* FILTER */
 .filter-container {
     max-width: 1200px;
-    margin: 0 auto 30px auto; /* Margin bawah untuk memisahkan dari grid */
+    margin: 0 auto 30px auto;
     padding: 0 20px;
     display: flex;
-    justify-content: flex-start; /* Posisikan di kiri */
     align-items: center;
 }
 
 .filter-container label {
-    color: #ddd;
+    color: #fff;
     margin-right: 10px;
-    font-weight: 500;
 }
 
 #category-select {
-    padding: 8px 12px;
-    border-radius: 5px;
-    border: 1px solid #00FFE1;
-    background-color: #1e1e1e; /* Background gelap */
-    color: #00FFE1; /* Warna teks cyan */
-    cursor: pointer;
-    font-size: 16px;
-    appearance: none; /* Hilangkan gaya default browser */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2300FFE1' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* Tambahkan ikon dropdown kustom (panah ke bawah) */
-    background-repeat: no-repeat;
-    background-position: right 10px top 50%;
-    background-size: 10px;
-    transition: background-color 0.2s;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #00FFE1;
+    background: #000;
+    color: #00FFE1;
 }
 
-#category-select:hover {
-    background-color: #2a2a2a;
-}
-
-#category-select option {
-    background-color: #1e1e1e; 
-    color: #ddd;
-}
-/* AKHIR GAYA FILTER */
-
-
+/* CARD PRODUK */
 .product-card { 
-    background: #000000;
-    border: 1px solid #ffffff; 
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid #00FFE1; 
     padding: 20px; 
-    border-radius: 8px;
+    border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s;
+    box-shadow: 0 0 20px rgba(0,255,225,0.25);
+    color: #fff;
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
 }
 
-.product-card img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: contain; /* Agar gambar tidak terpotong */
-    border-radius: 6px;
-    margin-bottom: 15px;
-}
-
-.product-card h3 {
-    color: #00bcd4;
-    margin: 10px 0 5px 0;
-}
-
-.product-card p {
-    color: #ddd;
-    margin: 5px 0;
-    font-size: 15px;
-}
-
+/* BUTTON */
 .btn-add-cart {
     background: #00FFE1;
     color: #000;
-    border: none;
     padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-    margin-top: 15px;
-    transition: background 0.3s;
-}
-
-.btn-add-cart:hover {
-    background: #00bcd4;
+    border-radius: 6px;
+    font-weight: 700;
 }
