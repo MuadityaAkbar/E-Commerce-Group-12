@@ -1,9 +1,3 @@
-/*
- * Bagian CSS Khusus untuk ADMIN MANAGE USERS (admin_manage_users.php)
- * (Asumsi: .data-table dan .status-badge dasar sudah didefinisikan secara global)
- */
-
-/* --- Tampilan Tabel dan Responsif --- */
 
 .table-responsive {
     overflow-x: auto; /* Memungkinkan scrolling horizontal di layar kecil */
