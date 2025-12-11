@@ -1,8 +1,8 @@
 <?php
 // FILE: Logout.php
 session_start();
-session_unset();    
-session_destroy();  
+session_unset();    // Hapus semua variabel session
+session_destroy();  // Hancurkan session
 
 header("Location: login.php"); // Redirect ke halaman login
 exit;
